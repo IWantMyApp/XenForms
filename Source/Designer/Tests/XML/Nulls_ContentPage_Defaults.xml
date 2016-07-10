@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<ContentPage AnchorX="0.5" AnchorY="0.5" BackgroundColor="Default" HeightRequest="-1" InputTransparent="False" IsBusy="False" IsEnabled="True" IsVisible="True" MinimumHeightRequest="-1" MinimumWidthRequest="-1" Opacity="1" Padding="0" Rotation="0" RotationX="0" RotationY="0" Scale="1" TranslationX="0" TranslationY="0" WidthRequest="-1" AutomationId="{x:Null}" BackgroundImage="{x:Null}" BindingContext="{x:Null}" ClassId="{x:Null}" ControlTemplate="{x:Null}" Icon="{x:Null}" Parent="{x:Null}" Resources="{x:Null}" Style="{x:Null}" StyleClass="{x:Null}" StyleId="{x:Null}" Title="{x:Null}" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+  <x:Null />
+</ContentPage>

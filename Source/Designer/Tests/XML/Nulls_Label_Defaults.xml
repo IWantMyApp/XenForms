@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<Label AnchorX="0.5" AnchorY="0.5" BackgroundColor="Default" Font="" FontAttributes="None" FontSize="13.980582524271844" HeightRequest="-1" HorizontalOptions="Fill" HorizontalTextAlignment="Start" InputTransparent="False" IsEnabled="True" IsVisible="True" LineBreakMode="WordWrap" Margin="0" MinimumHeightRequest="-1" MinimumWidthRequest="-1" Opacity="1" Rotation="0" RotationX="0" RotationY="0" Scale="1" TextColor="Default" TranslationX="0" TranslationY="0" VerticalOptions="Fill" VerticalTextAlignment="Start" WidthRequest="-1" XAlign="Start" YAlign="Start" AutomationId="{x:Null}" BindingContext="{x:Null}" ClassId="{x:Null}" FontFamily="{x:Null}" FormattedText="{x:Null}" Parent="{x:Null}" Resources="{x:Null}" Style="{x:Null}" StyleClass="{x:Null}" StyleId="{x:Null}" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+  <x:Null />
+</Label>

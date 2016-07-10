@@ -1,0 +1,1 @@
+﻿Remove-Item -Path .\Plugins\* -Exclude XenForms.Plugin.*

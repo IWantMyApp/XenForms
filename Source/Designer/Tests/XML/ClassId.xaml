@@ -1,0 +1,52 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" NavigationPage.HasNavigationBar="True" NavigationPage.HasBackButton="True" NavigationPage.TitleIcon="{x:Null}">
+  <ContentPage.Parent>
+    <NavigationPage AnchorX="0.5" AnchorY="0.5" BackgroundColor="Default" BarBackgroundColor="Default" BarTextColor="Default" HeightRequest="-1" InputTransparent="False" IsBusy="False" IsEnabled="True" IsVisible="True" MinimumHeightRequest="-1" MinimumWidthRequest="-1" Opacity="1" Padding="0" Rotation="0" RotationX="0" RotationY="0" Scale="1" Tint="Default" TranslationX="0" TranslationY="0" WidthRequest="-1" BackgroundImage="{x:Null}" BindingContext="{x:Null}" ClassId="designer.xenforms.com" Icon="{x:Null}">
+      <NavigationPage.Parent>
+        <App BindingContext="{x:Null}" ClassId="{x:Null}" Parent="{x:Null}">
+          <App.Properties>
+            <Dictionary x:TypeArguments="x:String, x:Object" />
+          </App.Properties>
+          <App.Resources>
+            <x:Null />
+          </App.Resources>
+          <App.StyleId>
+            <x:Null />
+          </App.StyleId>
+        </App>
+      </NavigationPage.Parent>
+      <NavigationPage.Resources>
+        <x:Null />
+      </NavigationPage.Resources>
+      <NavigationPage.Style>
+        <x:Null />
+      </NavigationPage.Style>
+      <NavigationPage.StyleClass>
+        <x:Null />
+      </NavigationPage.StyleClass>
+      <NavigationPage.StyleId>
+        <x:Null />
+      </NavigationPage.StyleId>
+      <NavigationPage.Title>
+        <x:Null />
+      </NavigationPage.Title>
+    </NavigationPage>
+  </ContentPage.Parent>
+  <ContentPage.Resources>
+    <x:Null />
+  </ContentPage.Resources>
+  <ContentPage.Style>
+    <x:Null />
+  </ContentPage.Style>
+  <ContentPage.StyleClass>
+    <x:Null />
+  </ContentPage.StyleClass>
+  <ContentPage.StyleId>
+    <x:Null />
+  </ContentPage.StyleId>
+  <ContentPage.Title>
+    <x:Null />
+  </ContentPage.Title>
+  <StackLayout Spacing="0">
+    <Button Text="Test" />
+  </StackLayout>
+</ContentPage>

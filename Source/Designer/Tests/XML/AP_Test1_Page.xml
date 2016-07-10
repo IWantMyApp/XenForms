@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+  <Entry
+        AnchorX="18"
+        AnchorY="19"
+        HorizontalOptions="Expand"
+        AP.Test1="165" />
+</ContentPage>

@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4FA21616-BC54-4AE4-86B8-8DDA85EDD227}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>XenForms.Core</RootNamespace>
+    <AssemblyName>XenForms.Core</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkProfile>Profile259</TargetFrameworkProfile>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Designer\Generators\EnumGenerator.cs" />
+    <Compile Include="Designer\Generators\StaticGenerator.cs" />
+    <Compile Include="Designer\IGenerateValues.cs" />
+    <Compile Include="Designer\DescriptorRegistrar.cs" />
+    <Compile Include="Designer\Reactions\GetConstructorsReaction.cs" />
+    <Compile Include="Designer\Reactions\GetObjectReaction.cs" />
+    <Compile Include="Designer\RegistrarMatches.cs" />
+    <Compile Include="Designer\SerializerRegistrar.cs" />
+    <Compile Include="FileSystem\FileSystem.cs" />
+    <Compile Include="Messages\AddSupportedTypeRequest.cs" />
+    <Compile Include="Messages\AttachEventHandlerRequest.cs" />
+    <Compile Include="Messages\CallConstructorRequest.cs" />
+    <Compile Include="Messages\CreateGridRequest.cs" />
+    <Compile Include="Messages\CreateStackLayoutRequest.cs" />
+    <Compile Include="Messages\DesignerReady.cs" />
+    <Compile Include="Messages\EditCollectionRequest.cs" />
+    <Compile Include="Messages\GetAttachedPropertiesRequest.cs" />
+    <Compile Include="Messages\GetDesignSurfaceXamlRequest.cs" />
+    <Compile Include="Messages\GetObjectRequest.cs" />
+    <Compile Include="Messages\GetConstructorsRequest.cs" />
+    <Compile Include="Messages\IWidgetMessage.cs" />
+    <Compile Include="Messages\NewPageRequest.cs" />
+    <Compile Include="Messages\ObjectResponse.cs" />
+    <Compile Include="Messages\LoadProjectRequest.cs" />
+    <Compile Include="Messages\SaveXamlRequest.cs" />
+    <Compile Include="Messages\XamlResponse.cs" />
+    <Compile Include="Plugin\ViewType.cs" />
+    <Compile Include="Plugin\XenFormsDiscoverable.cs" />
+    <Compile Include="Properties\Annotations.cs" />
+    <Compile Include="Reflection\IFindCustomAttributes.cs" />
+    <Compile Include="Reflection\ITypeFinder.cs" />
+    <Compile Include="Reflection\XenConstructorMethods.cs" />
+    <Compile Include="Reflection\XenPropertyMethods.cs" />
+    <Compile Include="Reflection\XenReflectionPropertyExtensions.cs" />
+    <Compile Include="Toolbox\DefaultPropertyEditorManager.cs" />
+    <Compile Include="Toolbox\ToolboxApp.cs" />
+    <Compile Include="Toolbox\Actions\AddSupportedTypeAction.cs" />
+    <Compile Include="Toolbox\Actions\AttachedPropertiesReceivedAction.cs" />
+    <Compile Include="Toolbox\Actions\CallConstructorAction.cs" />
+    <Compile Include="Toolbox\Actions\OpenXamlAction.cs" />
+    <Compile Include="Toolbox\Actions\XamlResponseAction.cs" />
+    <Compile Include="Toolbox\Actions\DesignerReadyAction.cs" />
+    <Compile Include="Toolbox\Actions\EditCollectionAction.cs" />
+    <Compile Include="Toolbox\Actions\GetConstructorsAction.cs" />
+    <Compile Include="Toolbox\Actions\GetObjectAction.cs" />
+    <Compile Include="Toolbox\Actions\SaveXamlAction.cs" />
+    <Compile Include="Toolbox\AppEvents\AddSupportedTypeEvent.cs" />
+    <Compile Include="Toolbox\AppEvents\CollectionPropertiesReceived.cs" />
+    <Compile Include="Toolbox\AppEvents\ConstructorCalled.cs" />
+    <Compile Include="Toolbox\AppEvents\ConstructorsReceived.cs" />
+    <Compile Include="Toolbox\AppEvents\EditCollectionResponseReceived.cs" />
+    <Compile Include="Toolbox\AppEvents\OpenXamlResponseReceived.cs" />
+    <Compile Include="Toolbox\AppEvents\ProjectFolderSetEvent.cs" />
+    <Compile Include="Toolbox\AppEvents\RestartDesignerEvent.cs" />
+    <Compile Include="Toolbox\AppEvents\SaveXamlReceived.cs" />
+    <Compile Include="Toolbox\AppEvents\ShowLoadProjectDialogEvent.cs" />
+    <Compile Include="Toolbox\AppEvents\ShowRegisterNewViewDialog.cs" />
+    <Compile Include="Toolbox\AppEvents\XamlElementDefaultsReceived.cs" />
+    <Compile Include="Toolbox\AppEvents\ObjectPropertiesReceived.cs" />
+    <Compile Include="Reflection\IShallowClone.cs" />
+    <Compile Include="Toolbox\AppEvents\ShowAttachedProperties.cs" />
+    <Compile Include="Toolbox\AppEvents\ReplacedWidgetCollection.cs" />
+    <Compile Include="Toolbox\AppEvents\VisualTreeNodeSelected.cs" />
+    <Compile Include="Toolbox\DesignerBridge.cs" />
+    <Compile Include="Toolbox\PouchTypes.cs" />
+    <Compile Include="Toolbox\Project\ProjectAssembly.cs" />
+    <Compile Include="Toolbox\Project\ProjectState.cs" />
+    <Compile Include="Toolbox\Project\ProjectView.cs" />
+    <Compile Include="Toolbox\Project\ProjectResetResult.cs" />
+    <Compile Include="Toolbox\Project\SupportedFileTypes.cs" />
+    <Compile Include="Toolbox\Project\XenProjectFile.cs" />
+    <Compile Include="Widgets\XenPropertyRef.cs" />
+    <Compile Include="Widgets\XenType.cs" />
+    <Compile Include="Reflection\BindingFlags.cs" />
+    <Compile Include="Reflection\DesignAssembly.cs" />
+    <Compile Include="Reflection\IXenCodeCompiler.cs" />
+    <Compile Include="Designer\IDesignThread.cs" />
+    <Compile Include="FileSystem\FileDesc.cs" />
+    <Compile Include="FileSystem\FolderDesc.cs" />
+    <Compile Include="Messages\LoadEventsRequest.cs" />
+    <Compile Include="Reflection\IXenCodeLoader.cs" />
+    <Compile Include="Reflection\XenCodeEditor.cs" />
+    <Compile Include="Reflection\XenFormsExport.cs" />
+    <Compile Include="Toolbox\Actions\GetVisualTreeAction.cs" />
+    <Compile Include="Toolbox\Actions\GetWidgetEventsAction.cs" />
+    <Compile Include="Toolbox\Actions\GetWidgetPropertiesAction.cs" />
+    <Compile Include="Toolbox\Actions\ToolboxAction.cs" />
+    <Compile Include="Toolbox\AppEvents\ProjectFolderSelected.cs" />
+    <Compile Include="Toolbox\AppEvents\RefreshWidgetEvent.cs" />
+    <Compile Include="Toolbox\AppEvents\ResetWindowLayout.cs" />
+    <Compile Include="Toolbox\AppEvents\ShowStatusMessage.cs" />
+    <Compile Include="Toolbox\AppEvents\ToggleProjectFiles.cs" />
+    <Compile Include="Toolbox\AppEvents\ForceVisualTreeRefresh.cs" />
+    <Compile Include="Toolbox\IToolboxEventModel.cs" />
+    <Compile Include="Toolbox\IPropertyEditor.cs" />
+    <Compile Include="Toolbox\Project\ProjectWorkspace.cs" />
+    <Compile Include="Toolbox\UserSettingKeys.cs" />
+    <Compile Include="Toolbox\Settings\GeneralSettingsPanelModel.cs" />
+    <Compile Include="Toolbox\Shell\DefaultMessageBus.cs" />
+    <Compile Include="Toolbox\Shell\ExecuteWhen.cs" />
+    <Compile Include="Diagnostics\Logging.cs" />
+    <Compile Include="Diagnostics\LogItem.cs" />
+    <Compile Include="Toolbox\Shell\ISettingsStore.cs" />
+    <Compile Include="Toolbox\Shell\IStartupTask.cs" />
+    <Compile Include="Messages\Request.cs" />
+    <Compile Include="Messages\Response.cs" />
+    <Compile Include="Messages\ValidationResult.cs" />
+    <Compile Include="Networking\DefaultToolboxSocketManager.cs" />
+    <Compile Include="Networking\SocketCloseCode.cs" />
+    <Compile Include="Plugin\IPluginRegistration.cs" />
+    <Compile Include="Messages\CreateWidgetRequest.cs" />
+    <Compile Include="Messages\DeleteWidgetRequest.cs" />
+    <Compile Include="Messages\GetWidgetEventsRequest.cs" />
+    <Compile Include="Messages\GetWidgetPropertiesRequest.cs" />
+    <Compile Include="Messages\OpenXamlRequest.cs" />
+    <Compile Include="Messages\SetPropertyRequest.cs" />
+    <Compile Include="Messages\UnknownXenMessage.cs" />
+    <Compile Include="Networking\DefaultToolboxSocket.cs" />
+    <Compile Include="Toolbox\Shell\IMessageBus.cs" />
+    <Compile Include="Networking\ToolboxSocketManager.cs" />
+    <Compile Include="Designer\Reactions\GetPropertiesReaction.cs" />
+    <Compile Include="Designer\Reactions\GetVisualTreeReaction.cs" />
+    <Compile Include="Reflection\ReflectionExtensions.cs" />
+    <Compile Include="Toolbox\AppEvents\IAppEvent.cs" />
+    <Compile Include="Toolbox\ToolboxEventModel.cs" />
+    <Compile Include="Toolbox\ToolboxEventVisibility.cs" />
+    <Compile Include="Toolbox\PropertyEditorModel.cs" />
+    <Compile Include="Toolbox\PropertyEditorSavingEventArgs.cs" />
+    <Compile Include="Toolbox\ToolboxAppEvents.cs" />
+    <Compile Include="Toolbox\VisualTree.cs" />
+    <Compile Include="Toolbox\Workflow\DefaultToolboxWorkflow.cs" />
+    <Compile Include="Designer\Workflow\DesignWorkflow.cs" />
+    <Compile Include="Toolbox\Workflow\ToolboxWorkflow.cs" />
+    <Compile Include="Toolbox\AppEvents\NewVisualTreeRootSet.cs" />
+    <Compile Include="Toolbox\AppEvents\ShowWidgetEvents.cs" />
+    <Compile Include="Toolbox\AppEvents\ShowWidgetPropertyEditors.cs" />
+    <Compile Include="Toolbox\AppEvents\ProjectFileSelected.cs" />
+    <Compile Include="Toolbox\Shell\MenuPlacementAttribute.cs" />
+    <Compile Include="Toolbox\PropertyEditorInformation.cs" />
+    <Compile Include="Toolbox\ToolboxLogging.cs" />
+    <Compile Include="Toolbox\PropertyEditorAttribute.cs" />
+    <Compile Include="Widgets\IXenPropertySerializer.cs" />
+    <Compile Include="Designer\Reactions\DesignerReaction.cs" />
+    <Compile Include="Toolbox\VisualTreeNode.cs" />
+    <Compile Include="Widgets\XenPropertyDescriptors.cs" />
+    <Compile Include="Widgets\XenEvent.cs" />
+    <Compile Include="Widgets\XenProperty.cs" />
+    <Compile Include="Messages\SupportedTypesRequest.cs" />
+    <Compile Include="Messages\OkResponse.cs" />
+    <Compile Include="Networking\DefaultDesignServer.cs" />
+    <Compile Include="Networking\DesignServerBehavior.cs" />
+    <Compile Include="Networking\INetworkAdapter.cs" />
+    <Compile Include="Networking\SocketMessageReceivedEventArgs.cs" />
+    <Compile Include="Designer\Reactions\DesignSurfaceManager.cs" />
+    <Compile Include="Designer\Reactions\DesignSurfacePair.cs" />
+    <Compile Include="Toolbox\AppEvents\DesignerReadyEvent.cs" />
+    <Compile Include="Toolbox\AppEvents\DisconnectedFromDesigner.cs" />
+    <Compile Include="Toolbox\AppEvents\ExecuteStartupTasks.cs" />
+    <Compile Include="Toolbox\AppEvents\CleanUpWorkspace.cs" />
+    <Compile Include="Toolbox\AppEvents\InitializeWorkspace.cs" />
+    <Compile Include="Toolbox\IPropertyEditorModel.cs" />
+    <Compile Include="Toolbox\PropertyEditorManager.cs" />
+    <Compile Include="Designer\Workflow\DefaultDesignWorkflow.cs" />
+    <Compile Include="Designer\Reactions\Reaction.cs" />
+    <Compile Include="Reflection\IXenMessageFinder.cs" />
+    <Compile Include="Messages\DesignServerStoppedOk.cs" />
+    <Compile Include="Diagnostics\XenLogLevel.cs" />
+    <Compile Include="Networking\ToolboxSocket.cs" />
+    <Compile Include="Networking\ServiceEndpoint.cs" />
+    <Compile Include="Networking\SocketConnectedEventArgs.cs" />
+    <Compile Include="Networking\SocketClosedEventArgs.cs" />
+    <Compile Include="Networking\SocketErrorEventArgs.cs" />
+    <Compile Include="Networking\SocketTraceEventArgs.cs" />
+    <Compile Include="Networking\DesignServer.cs" />
+    <Compile Include="Designer\TypeRegistrar.cs" />
+    <Compile Include="Messages\DisconnectRequest.cs" />
+    <Compile Include="Messages\XenMessage.cs" />
+    <Compile Include="Messages\GetVisualTreeRequest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Networking\XenMessageContext.cs" />
+    <Compile Include="Designer\Reactions\SupportedTypesReaction.cs" />
+    <Compile Include="Reflection\ReflectionMethods.cs" />
+    <Compile Include="Widgets\XenWidget.cs" />
+    <Compile Include="Widgets\XenWidgetExtensions.cs" />
+    <Compile Include="Reflection\XenReflectionProperty.cs" />
+    <Compile Include="XAML\IXamlPostProcessor.cs" />
+    <Compile Include="XAML\XamlDocumentDiscovery.cs" />
+    <Compile Include="XAML\XamlParseErrorInfo.cs" />
+    <Compile Include="XAML\XamlTreeReader.cs" />
+    <Compile Include="XAML\XenXamlWriter.cs" />
+    <Compile Include="XenFormsEnvironment.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ninject">
+      <HintPath>..\..\packages\Portable.Ninject.3.3.1\lib\net40-client\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="Portable.Xaml">
+      <HintPath>..\..\Libraries\Portable.Xaml.dll</HintPath>
+    </Reference>
+    <Reference Include="PubSub, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\PubSub.1.5.0\lib\portable-net45+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1\PubSub.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Collections.Concurrent">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\System.Collections.Concurrent.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Dataflow, Version=4.5.24.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Tpl.Dataflow.4.5.24\lib\portable-net45+win8+wp8+wpa81\System.Threading.Tasks.Dataflow.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="websocket-sharp">
+      <HintPath>..\..\Libraries\websocket-sharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

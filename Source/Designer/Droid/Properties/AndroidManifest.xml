@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.xenforms.designer" android:installLocation="auto" android:versionCode="3" android:versionName="3">
+	<uses-sdk android:minSdkVersion="15" android:targetSdkVersion="23" />
+	<application android:label="XenForms" android:largeHeap="true" android:icon="@drawable/icon"></application>
+</manifest>

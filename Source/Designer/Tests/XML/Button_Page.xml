@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DesignSurfacePage x:Name="__ReferenceID0" AnchorX="0.5" AnchorY="0.5" AutomationId="{x:Null}" BackgroundColor="Default" BackgroundImage="{x:Null}" BindingContext="{x:Null}" ClassId="{x:Null}" ControlTemplate="{x:Null}" HeightRequest="-1" Icon="{x:Null}" InputTransparent="False" IsBusy="False" IsEnabled="True" IsVisible="True" MinimumHeightRequest="-1" MinimumWidthRequest="-1" Opacity="1" Padding="0" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+  <DesignSurfacePage.Parent>
+    <NavigationPage x:Name="__ReferenceID1" AnchorX="0.5" AnchorY="0.5" AutomationId="{x:Null}" BackgroundColor="Default" BackgroundImage="{x:Null}" BarBackgroundColor="Default" BarTextColor="Default" BindingContext="{x:Null}" ClassId="{x:Null}" HeightRequest="-1" Icon="{x:Null}" InputTransparent="False" IsBusy="False" IsEnabled="True" IsVisible="True" MinimumHeightRequest="-1" MinimumWidthRequest="-1" Opacity="1" Padding="0">
+      <NavigationPage.Parent>
+        <App AutomationId="{x:Null}" BindingContext="{x:Null}" ClassId="{x:Null}" MainPage="{x:Reference __ReferenceID1}" Parent="{x:Null}">
+          <App.Properties>
+            <Dictionary x:TypeArguments="x:String, x:Object" />
+          </App.Properties>
+          <App.Resources>
+            <x:Null />
+          </App.Resources>
+          <App.StyleId>
+            <x:Null />
+          </App.StyleId>
+        </App>
+      </NavigationPage.Parent>
+      <NavigationPage.Resources>
+        <x:Null />
+      </NavigationPage.Resources>
+      <NavigationPage.Rotation>0</NavigationPage.Rotation>
+      <NavigationPage.RotationX>0</NavigationPage.RotationX>
+      <NavigationPage.RotationY>0</NavigationPage.RotationY>
+      <NavigationPage.Scale>1</NavigationPage.Scale>
+      <NavigationPage.Style>
+        <x:Null />
+      </NavigationPage.Style>
+      <NavigationPage.StyleClass>
+        <x:Null />
+      </NavigationPage.StyleClass>
+      <NavigationPage.StyleId>
+        <x:Null />
+      </NavigationPage.StyleId>
+      <NavigationPage.Tint>Default</NavigationPage.Tint>
+      <NavigationPage.Title>
+        <x:Null />
+      </NavigationPage.Title>
+      <NavigationPage.TranslationX>0</NavigationPage.TranslationX>
+      <NavigationPage.TranslationY>0</NavigationPage.TranslationY>
+      <NavigationPage.WidthRequest>-1</NavigationPage.WidthRequest>
+    </NavigationPage>
+  </DesignSurfacePage.Parent>
+  <DesignSurfacePage.Resources>
+    <x:Null />
+  </DesignSurfacePage.Resources>
+  <DesignSurfacePage.Rotation>0</DesignSurfacePage.Rotation>
+  <DesignSurfacePage.RotationX>0</DesignSurfacePage.RotationX>
+  <DesignSurfacePage.RotationY>0</DesignSurfacePage.RotationY>
+  <DesignSurfacePage.Scale>1</DesignSurfacePage.Scale>
+  <DesignSurfacePage.Style>
+    <x:Null />
+  </DesignSurfacePage.Style>
+  <DesignSurfacePage.StyleClass>
+    <x:Null />
+  </DesignSurfacePage.StyleClass>
+  <DesignSurfacePage.StyleId>
+    <x:Null />
+  </DesignSurfacePage.StyleId>
+  <DesignSurfacePage.Title>Design Surface</DesignSurfacePage.Title>
+  <DesignSurfacePage.TranslationX>0</DesignSurfacePage.TranslationX>
+  <DesignSurfacePage.TranslationY>0</DesignSurfacePage.TranslationY>
+  <DesignSurfacePage.WidthRequest>-1</DesignSurfacePage.WidthRequest>
+
+  <Button
+     xmlns="http://xamarin.com/schemas/2014/forms"
+     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+     AnchorX="0.5"
+     AnchorY="0.5"
+     AutomationId="{x:Null}"
+     BackgroundColor="Default"
+     BindingContext="{x:Null}"
+     BorderColor="Default"
+     BorderRadius="5"
+     BorderWidth="0"
+     ClassId="{x:Null}"
+     Command="{x:Null}"
+     CommandParameter="{x:Null}"
+     ContentLayout="Image Position = Left, Spacing = 10"
+     Font=""
+     FontAttributes="None"
+     FontFamily="{x:Null}"
+     FontSize="24"
+     HeightRequest="-1"
+     HorizontalOptions="Fill"
+     Image="{x:Null}"
+     InputTransparent="False"
+     IsEnabled="True"
+     IsVisible="True"
+     Margin="0"
+     MinimumHeightRequest="-1"
+     MinimumWidthRequest="-1"
+     Opacity="1"
+     Parent="{x:Reference __ReferenceID1}"
+     Resources="{x:Null}"
+     Rotation="0"
+     RotationX="0"
+     RotationY="0"
+     Scale="1"
+     Style="{x:Null}"
+     StyleClass="{x:Null}"
+     StyleId="{x:Null}"
+     Text="Click Me"
+     TextColor="Default"
+     TranslationX="0"
+     TranslationY="0"
+     VerticalOptions="Fill"
+     WidthRequest="-1" />
+  
+</DesignSurfacePage>

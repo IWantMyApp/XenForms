@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>XenForms</id>
+        <version>0.8.0</version>
+        <title>XenForms</title>
+        <authors>Michael Davis</authors>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>XenForms | A Xamarin.Forms UI Designer</description>
+        <copyright>Michael Davis</copyright>
+        <language>en-US</language>
+    </metadata>
+    <files>
+        <file src="..\Artifacts\Release\Desktop\**" target="lib\net45" />
+    </files>
+</package>
