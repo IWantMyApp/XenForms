@@ -60,4 +60,7 @@ Reactions must be registered before a message can be dispatched to it. This is d
 XamarinFormsReaction.Register<GetVisualTreeRequest, GetVisualTreeReaction<VisualElement>>(page);
 ```
 
-**todo... more info coming**
+##Roadmap and Contributing 
+I have a [project board](https://trello.com/b/dAZJ4QkT/xenforms-beta-roadmap) on Trello that I use to maintain my backlog of work. Rewriting the XAML load & save features is crucial. The project started as a visual tree inspector, and saving XAML was *bolted* on in the last few cycles. You can see that by viewing the ```XamlPostProcessor`` type.
+
+I happily accept pull requests. :P
