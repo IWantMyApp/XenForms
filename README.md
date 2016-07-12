@@ -9,6 +9,9 @@ XenForms is a Xamarin.Forms UI Designer. It allows you to open, visually manipul
 
  The mobile application that plays the role of the design surface. The toolbox connects to the designer.
  
+##Binaries
+The official binary distribution can be found on the [XenForms web site](https://www.xenforms.com/). It currently runs on Microsoft Windows 7+ and Android 4.0.3 – 6.0.
+
 ##Solutions
 
 The Toolbox and Designer each have their respective Visual Studio/Xamarin Studio ```.sln``` file. Compiling and deploying locally should be straight-forward, as there are no custom build events.
